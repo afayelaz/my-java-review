@@ -1,0 +1,16 @@
+Biggest update -> Java 8 -> Lambda
+Why Lambda -> Enable functional  programming
+           -> Readable
+           -> Maintainable
+
+*****************
+--> functional programming
+sort(action) {
+    action(); // sorting/quick sorting/ bubble sorting
+}
+*****************
+
+Behaviour parameterization
+    -> Interface - abstract method - know what to do
+
+
