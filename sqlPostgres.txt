@@ -1,5 +1,11 @@
 
-Postgres 5342
+Postgres download
+PgAdmin4 download
+pg server - https://www.screencast.com/t/5nUmElmW1of
+5342 -
+user :postgres
+pw - *****
+DB - Select -> already created PgAdmin
 
 
 
