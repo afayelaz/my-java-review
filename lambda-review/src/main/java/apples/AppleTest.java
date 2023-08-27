@@ -13,6 +13,8 @@ public class AppleTest {
         inventory.add(new Apple(200, Color.GREEN));
         inventory.add(new Apple(50, Color.RED));
 
+        // one method and behaviours
+
         List<Apple> heavyApple = filterApples(inventory,new AppleWeightCheck());
         System.out.println(heavyApple);
 
