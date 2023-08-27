@@ -24,11 +24,14 @@ public class SetReview {
         System.out.println("duplicate allow= " +numSet.add(4));
 
         String str = "Java Developer";
-        System.out.println(str +" first repeating char: " +firstRepeatingChar(str) + " should be a");
+        System.out.println(str +" first repeating char: " +firstRepeatingChar(str));
     }
 
     // @firstRepeatingChar
     // returning firstRepeatingChar
+
+
+    //    public static char firstNonRepeatingChar (String str) { // char complaining in SET
     public static Character firstRepeatingChar(String str) {
 
         //Create a hasmap
