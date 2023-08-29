@@ -1,0 +1,12 @@
+
+Creating Lambda:
+
+Step-1: Create a new Interface
+        interface MyLambda {
+        }
+Step-2: Create a method, exact the same signature with lambda expression
+        interface MyLambda {
+            void print();
+        }
+
+ MyLambda myLambda = () -> System.out.println("Sorting the array");

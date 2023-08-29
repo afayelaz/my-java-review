@@ -15,7 +15,19 @@ public class ArraySorting {
         as.sort(xyzSorting);
 
 
-        // -
+        //Lambda Steps example
+        //created MyLambda interface
+        //        interface MyLambda {
+        //            void print();
+        //        }
+        // have to exactly match same signature with the method () <> ()
+//        MyLambda myLambda = () -> System.out.println("Sorting the array") ;
+        //can remove the MyLambda interface// Already sorting do the same
+        //Java ReadyAPI interfaces
+        Sorting myLambda2 = () -> System.out.println("Sorting the array");
+
+        //ready interface javaAPI
+
     }
     // Sorting Array Method -- only 1 job
     // if need more than 1 job need add all conditions
@@ -48,6 +60,10 @@ public class ArraySorting {
         sorting.sort();
 
     }
+//
+//    interface MyLambda {
+//        void print();
+//    }
 
 
 }

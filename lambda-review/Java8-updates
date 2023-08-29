@@ -9,8 +9,83 @@ sort(action) {
     action(); // sorting/quick sorting/ bubble sorting
 }
 *****************
-
 Behaviour parameterization
     -> Interface - abstract method - know what to do
+
+********Lambda
+public void sort (action) {
+    action();
+}
+---------
+Lambda : are just functions.
+Lambdas do not belong to any class.
+Lambda functions can assume as values.
+
+   String str = "name"; // value
+        // abc is a value
+=>   abc = public void sort() {
+        System.out.println("Quick Sorting");
+        }
+    -public-access modifier- remove it - Lambdas do not belong to any class.
+=>   abc = void sort() {
+            System.out.println("Quick Sorting");
+            }
+    -sort - method name - abc is value so not need to sort method name - remove it
+=>   abc = void() {
+            System.out.println("Quick Sorting");
+            }
+     -void - return type. Java compiler enough smart. return object or not - remove it
+ =>   abc = () -> {System.out.println("Quick Sorting");}
+     -only 1 line. Not need to Curly braces
+     ****FINAL LAMBDA FUNCTION*****
+ =>   abc = () -> System.out.println("Quick Sorting");
+
+//Before Lambda Function
+public void sort (action) {
+    action();
+}
+
+//After Lambda Function -alternative 1
+public void sort (abc) {
+    action();
+}
+
+//After Lambda Function -alternative 2
+public void sort (() -> System.out.println("Quick Sorting");) {
+    action();
+}
+
+
+////Lambda Function takes parameter
+    //method
+    weightApple = public boolean test(Apple apple) {
+        return apple.getWeight()>150;
+    }
+    //Lambda
+    weightApple = (Apple apple) -> apple.getWeight()>150;
+
+    //lambda
+    lengthCount = (String s) -> s.length;
+
+    //lambda 2 line so that need {}
+    myFunction = (int x, int y) -> {
+            System.out.println("Result");
+            System.out.println(x+y);
+    }
+
+    //lambda
+    myLambda = () -> 42; // method just return 42
+
+
+
+
+
+
+
+
+
+
+
+
 
 
