@@ -76,6 +76,41 @@ public void sort (() -> System.out.println("Quick Sorting");) {
     //lambda
     myLambda = () -> 42; // method just return 42
 
+    // Creating Lambda
+    // !!! 1- need to create Interface (not skip the interface) !!!2- you need match same method sign
+    // !! skipped the implementation class - BubbleSort --> middle skipped. Functional Programming
+
+    Step 1 : Create  anew Interface
+
+            interface MyLambda {
+            }
+    Step 2 : Create a method, exact same signature with lamda expr
+               interface MyLambda {
+                void print();
+            }
+
+            MyLambda myLambda = () -> System.out.println("Sorting the array");
+     //@FunctionalInterface - inform
+
+     Type Inference:
+
+     interface StringLengthLambda {
+        int getLength(String s); // @FunctionalInterface -- 1 method
+     }
+
+     StringLengthLambda myLambda = (String s) -> s.length
+
+      StringLengthLambda myLambda = (s) -> s.length // compiler understand String
+
+      weightApple = (apple) -> apple.getWeight()>150;
+
+      if you have only 1 argument, no need parenthesis ()
+
+            StringLengthLambda myLambda = s -> s.length // compiler understand String
+
+            weightApple = apple -> apple.getWeight()>150;
+
+
 
 
 

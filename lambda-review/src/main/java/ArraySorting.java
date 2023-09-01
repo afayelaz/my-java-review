@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class ArraySorting {
 
     public static void main(String[] args) {
@@ -24,9 +26,37 @@ public class ArraySorting {
 //        MyLambda myLambda = () -> System.out.println("Sorting the array") ;
         //can remove the MyLambda interface// Already sorting do the same
         //Java ReadyAPI interfaces
-        Sorting myLambda2 = () -> System.out.println("Sorting the array");
 
-        //ready interface javaAPI
+//        MyLambda myLambda = () -> System.out.println("Sorting the array"); // the same signature
+//        Sorting myLambda2 = () -> System.out.println("Sorting the array"); // it works no need myLamda interface - the same signature
+        //@FunctionalInterface
+
+
+//        System.out.println("*******");
+//        Sorting noLambda = new QuickSort();
+//        noLambda.sort();
+
+        // !!! 1- need to create Interface (not skip the interface) !!!2- you need match same method sign
+        // !! skipped the implementation class - BubbleSort --> middle skipped. Functional Programming
+
+        Sorting quickSort = () -> System.out.println("Quick sorting");
+        as.sort(quickSort);
+
+        Sorting bubbleSort = () -> System.out.println("Bubble sorting");
+        as.sort(bubbleSort);
+
+//        ********Lambda
+//        public void sort (action) {
+//                action();
+//        }
+        // behavior parameterization  via Lambda
+        as.sort(() -> System.out.println("Bubble sorting"));
+
+
+//        Type Inference:
+//        StringLengthLambda myLambda = s -> s.length // compiler understand String
+//        weightApple = apple -> apple.getWeight()>150;
+
 
     }
     // Sorting Array Method -- only 1 job
