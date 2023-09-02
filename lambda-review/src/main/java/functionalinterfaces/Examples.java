@@ -1,15 +1,18 @@
 package functionalinterfaces;
 
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 public class Examples {
 
     public static void main(String[] args) {
 
-            //JAVA READY APIs Funct Interfaces
+            //JAVA READY APIs - Functional Interfaces
 
         //****PREDICATE******///
-        // test(parameter) method
+        // boolean test(T t);
+        // test(parameter) method - return exist
+        // most frequent - need to check tremendous - so will use
 
 
     //Anonymous way
@@ -28,6 +31,22 @@ public class Examples {
 //        java 101 way
 //        Boolean result = lesserThan.test(50);
 //        System.out.println(result);
+
+        ///****CONSUMER******
+        // lambda method -- interface - 1 method exact match - JAVA Ready FI
+        // void accept(T t)
+        // accept()  void method no return
+
+        Consumer<Integer> display = i -> System.out.println(i);
+        display.accept(50);
+
+        // double column -- BEtter way on the way
+//        Consumer<Integer> display1 = System.out::println;
+//        display1.accept(50);
+
+
+
+
 
 
 
