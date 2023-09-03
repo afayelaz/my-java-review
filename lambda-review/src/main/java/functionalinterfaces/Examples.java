@@ -1,7 +1,6 @@
 package functionalinterfaces;
 
-import java.util.function.Consumer;
-import java.util.function.Predicate;
+import java.util.function.*;
 
 public class Examples {
 
@@ -10,6 +9,7 @@ public class Examples {
             //JAVA READY APIs - Functional Interfaces
 
         //****PREDICATE******///
+
         // boolean test(T t);
         // test(parameter) method - return exist
         // most frequent - need to check tremendous - so will use
@@ -33,7 +33,10 @@ public class Examples {
 //        System.out.println(result);
 
         ///****CONSUMER******
+
+
         // lambda method -- interface - 1 method exact match - JAVA Ready FI
+       //Consumer<T>
         // void accept(T t)
         // accept()  void method no return
 
@@ -43,6 +46,43 @@ public class Examples {
         // double column -- BEtter way on the way
 //        Consumer<Integer> display1 = System.out::println;
 //        display1.accept(50);
+
+        ///***BiConsmer***////
+
+        // //BiConsumer<T, U>
+        // void accept(T t, U u)
+        // accept()  void method no return
+
+        BiConsumer<Integer,Integer> addTwo = (x,y) -> System.out.println(x+y);
+        addTwo.accept(100,200);
+
+        //// *****FUNCTION****/////
+        //Function<T, R>
+        //apply(T t)
+        // return parameter
+        Function<String,String> fun = s -> "Hello " + s;
+        System.out.println(fun.apply("Feyz"));
+
+        Function<String,Integer> fun2 = s -> s.length();
+        // double column
+//        Function<String,Integer> fun2 = String::length;
+        System.out.println(fun2.apply("Feyz"));
+
+
+        ////***SUPPLIER*****///
+
+        //Supplier<T>
+        //get()
+        //Returns a result
+
+
+        Supplier<Double> randomValue = ()-> Math.random();
+        // // double column
+        //Supplier<Double> randomValue = Math::random;
+        System.out.println(randomValue.get());
+
+
+
 
 
 
